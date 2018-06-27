@@ -154,7 +154,7 @@ RSpec.describe "Person" do
         expect(penelope.take_bath).to eq("♪ Rub-a-dub just relaxing in the tub ♫")
       end
 
-      it "can't make a person cleaner by 10 points (hint: use the custom #hygiene= method)" do
+      it "can't make a person cleaner than 10 points (hint: use the custom #hygiene= method)" do
         penelope.hygiene = 9
         penelope.take_bath
         expect(penelope.hygiene).to eq(10)
